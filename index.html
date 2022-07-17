@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8" name="viewport" content="width=device-width,initial-scale=1.0">
+	<title>带壳截图工具</title>
+	<style>
+		@import url("./index.css");
+	</style>
+
+	<script src="http://libs.baidu.com/jquery/2.0.0/jquery.min.js"></script>
+	<script src="https://cdn.bootcdn.net/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
+	<script src ="./index.js"></script>
+</head>
+
+<body>
+	<div class = "content-wrapper">
+		<div class="mobile-phone" id="mobile-phone">
+			<div class="shoot-photo" id="shoot-photo"></div>
+		</div>
+		<div class="right">
+			<button class="change-phone buttons" onclick="changePhone('iphone6')">iphone6</button>
+			<button class="change-phone buttons" onclick="changePhone('iphone5')">iphone5</button>
+			<div class="wrap buttons">
+				<input class="upload-photo buttons" type='file' onchange="readURL(this);">
+					上传截图!!!
+				</input>
+			</div>
+			<button class="create-photo buttons" onclick="downLoad()"><a class="down">生成带壳截图</a></button>
+		</div>
+	<div>
+</body>
+</html>
